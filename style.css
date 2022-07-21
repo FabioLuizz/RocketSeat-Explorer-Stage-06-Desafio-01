@@ -14,19 +14,19 @@
 }
 
 body.bg-universe {
-  background-image: url(/images/universe.png);
+  background-image: url(images/universe.png);
 
 }
 
 body.bg-explorer {
-  background-image: url(/images/explorer.png);
+  background-image: url(images/explorer.png);
 
 }
 
 body {
   font-size: 1.6rem;
 
-  background-image: url(/images/home.png);
+  background-image: url(images/home.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
