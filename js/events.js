@@ -22,6 +22,8 @@ export default function Events({
     }
 
     function homeButtonEvent() {
+      window.location = '#home'
+
       buttonHome.classList.add('focus')
       buttonExplorer.classList.remove('focus')
       buttonAbout.classList.remove('focus')
@@ -30,6 +32,8 @@ export default function Events({
     }
 
     function aboutButtonEvent() {
+      window.location = '#about'
+
       buttonHome.classList.remove('focus')
       buttonExplorer.classList.remove('focus')
       buttonAbout.classList.add('focus')
@@ -38,6 +42,8 @@ export default function Events({
     }
 
     function explorerButtonEvent() {
+      window.location = '#explorer'
+
       buttonHome.classList.remove('focus')
       buttonExplorer.classList.add('focus')
       buttonAbout.classList.remove('focus')

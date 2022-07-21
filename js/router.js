@@ -18,7 +18,8 @@ export default class Router {
 
   handle() {
     const { hash } = window.location
-    const route = this.router[hash] || this.router[404]
+    const { pathname } = window.location
+    const route = this.router[hash] || this.router[pathname] || this.router[404]
 
     fetch(route)
       .then(data => data.text())
