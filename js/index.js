@@ -4,10 +4,10 @@ import {buttonHome, buttonAbout, buttonExplorer, page} from "./elements.js"
 
 const router = new Router()
 
-router.add("#home", "./pages/home.html")
-router.add("#about", "./pages/about.html")
-router.add("#explorer", "./pages/explorer.html")
-router.add(404, "./pages/error.html")
+router.add("#home", "pages/home.html")
+router.add("#about", "pages/about.html")
+router.add("#explorer", "pages/explorer.html")
+router.add(404, "pages/error.html")
 
 router.handle()
 
