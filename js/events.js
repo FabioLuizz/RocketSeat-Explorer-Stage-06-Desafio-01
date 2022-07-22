@@ -8,6 +8,10 @@ export default function Events({
     const hash = window.location.hash
 
     switch (hash) {
+      case '':
+        homeButtonEvent()
+        break
+
       case '#home':
         homeButtonEvent()
         break

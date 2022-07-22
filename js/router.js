@@ -1,5 +1,4 @@
 export default class Router {
-
   router = {}
 
   add(routeName, page) {
@@ -10,21 +9,17 @@ export default class Router {
     event = event || window.event
     event.preventDefault()
 
-    window.history.pushState({}, "", event.target.href)
+    window.history.pushState({}, '', event.target.href)
 
     this.handle()
-
   }
 
   handle() {
     const { hash } = window.location
-    const { pathname } = window.location
-    const route = this.router[hash] || this.router[pathname] || this.router[404]
+    const route = this.router[hash] || this.router[404]
 
     fetch(route)
       .then(data => data.text())
       .then(html => (document.querySelector('#app').innerHTML = html))
-    
   }
-  
 }
